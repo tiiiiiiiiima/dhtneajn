@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Моя игра</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page">
+  <main class="card">
+    <h1>Лови квадрат</h1>
+    <p>Нажми кнопку и игра откроется в отдельном окне/вкладке.</p>
+
+    <button id="openGame" class="btn">Открыть игру</button>
+
+    <p class="hint">
+      Если браузер блокирует всплывающие окна, он спросит разрешение.
+    </p>
+  </main>
+
+  <script>
+    document.getElementById("openGame").addEventListener("click", () => {
+      // Открываем новое окно/вкладку
+      window.open("game.html", "_blank", "noopener,noreferrer,width=900,height=650");
+    });
+  </script>
+</body>
+</html>
